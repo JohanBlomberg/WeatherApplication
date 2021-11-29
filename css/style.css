@@ -1,0 +1,74 @@
+body{
+       font-family: 'Merriweather', serif;
+    display: inline-block;
+}
+header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 10px;  
+    width: 100%;
+}
+#imgLogo {
+    grid-column: 1 / 4;
+    height: 150px;
+    width: 400px;
+    border-radius: 20px;
+}
+header h1{
+   grid-column: 5 / -1;
+   justify-self: center;
+   align-self: center;
+}
+.main{
+    background-color: rgb(238, 238, 238);
+    border-radius: 10px;
+    
+}
+#search {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+#search p{
+    padding-top: 10px;
+    grid-column: 4 / 10;
+}
+#inputField {
+    margin: 20px;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border-color: aliceblue;
+    grid-column: 5/8;
+    font-size: 14px;
+}
+
+#todaysWeather div{
+    display: flex;
+}
+
+#todaysWeather h3 {
+   margin-left: 30px;
+}
+#todaysWeather img {
+ height: 120px;
+ width: 120px;  
+}
+#todaysWeather p {
+    margin-left: 30px;
+    margin-bottom: 20px;
+   }
+
+#weatherPrognos tr {   
+    box-shadow: 2px 2px 2px 2px grey;
+    font-size: 12px;
+}
+#weatherPrognosDiv {   
+    margin-left: 130px;
+    padding-bottom: 20px;
+}
+
+#flexBox {
+    display:flex;
+justify-content: space-evenly;
+}
