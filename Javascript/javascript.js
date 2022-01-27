@@ -7,12 +7,11 @@ let weatherPrognos = document.getElementById('weatherPrognos')
 valueOfInput.addEventListener('keyup', function (){
     fetchJsonCurrentWeather()
     fetchJsonFutureForecast()
-    createFutureForecast()
 })
 
 async function fetchJsonCurrentWeather () {
     try {
-        let response = await fetch ('http://api.weatherapi.com/v1/current.json?key=dc1b9e8c38834cfba91131450212411&q=' + valueOfInput.value)
+        let response = await fetch ('http://api.weatherapi.com/v1/current.json?key=dc1b9e8c38834cfba91131450212411&q=' + valueOfInput.value, {mode: 'no-cors'})
 
         if (!response.ok){
             throw new Error ('Network problem')
